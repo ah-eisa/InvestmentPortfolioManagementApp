@@ -1,1 +1,44 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#07111f"><title>Capital AI Trader</title><link rel="manifest" href="/manifest.webmanifest"><style>*{box-sizing:border-box}body{margin:0;background:#07111f;color:#e8f3ff;font-family:Inter,system-ui,Arial}main{max-width:760px;margin:auto;padding:48px 22px}.tag{color:#4ea1ff;font-weight:700;letter-spacing:.08em}h1{font-size:42px;line-height:1.05;margin:12px 0}.sub{color:#9db9d5;font-size:18px;line-height:1.5}.card{background:#0c1c30;border:1px solid #173553;border-radius:22px;padding:22px;margin-top:24px}.ok{color:#8be0b0}.warn{color:#ffd183}.btn{display:inline-block;background:#4ea1ff;color:#03101f;text-decoration:none;font-weight:800;padding:15px 20px;border-radius:14px;margin-top:12px}.small{color:#819fbd;font-size:13px;line-height:1.5}code{background:#081522;padding:3px 6px;border-radius:7px}</style></head><body><main><div class="tag">EISAX • PERSONAL TRADING LAB</div><h1>Capital AI Trader</h1><p class="sub">Android-first personal trading runner. Capital.com and AI credentials stay encrypted on your phone using Android Keystore.</p><div class="card"><h2>Android runner</h2><p class="ok">✓ Foreground service &nbsp; ✓ Live WebSocket &nbsp; ✓ Local encrypted keys</p><p>The APK is built automatically from the isolated GitHub branch. Start in <code>SHADOW</code>, then use <code>DEMO</code> after checking the signals.</p><a class="btn" href="/Capital-AI-Trader-v0.1.0.apk">Download APK</a><p class="small">The APK appears here after the GitHub Actions build succeeds.</p></div><div class="card"><h2>Security model</h2><p>No Capital.com password, Capital API key, AI key, or live unlock phrase is stored on this website, GitHub, Vercel or Supabase.</p></div><div class="card"><h2>Important</h2><p class="warn">Real-money mode is locked behind three local conditions: LIVE environment, LIVE execution and the exact unlock phrase.</p></div></main><script>if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js').catch(()=>{});</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#07111f">
+  <title>Capital AI Trader</title>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <style>
+    *{box-sizing:border-box} body{margin:0;background:#07111f;color:#e8f3ff;font-family:Inter,system-ui,Arial}
+    main{max-width:760px;margin:auto;padding:48px 22px}.tag{color:#4ea1ff;font-weight:700;letter-spacing:.08em}
+    h1{font-size:42px;line-height:1.05;margin:12px 0}.sub{color:#9db9d5;font-size:18px;line-height:1.5}
+    .card{background:#0c1c30;border:1px solid #173553;border-radius:22px;padding:22px;margin-top:24px}
+    .ok{color:#8be0b0}.warn{color:#ffd183}.btn{display:inline-block;background:#4ea1ff;color:#03101f;text-decoration:none;
+      font-weight:800;padding:15px 20px;border-radius:14px;margin-top:12px}.small{color:#819fbd;font-size:13px;line-height:1.5}
+    code{background:#081522;padding:3px 6px;border-radius:7px}
+  </style>
+</head>
+<body>
+<main>
+  <div class="tag">EISAX • PERSONAL TRADING LAB</div>
+  <h1>Capital AI Trader</h1>
+  <p class="sub">Android-first personal trading runner. Capital.com and AI credentials stay encrypted on the phone using Android Keystore.</p>
+  <div class="card">
+    <h2>Android runner</h2>
+    <p class="ok">✓ Foreground service &nbsp; ✓ Live WebSocket &nbsp; ✓ Local encrypted keys</p>
+    <p>The APK is built from the public source branch. Start in <code>SHADOW</code>, move to <code>DEMO</code> only after checking signals.</p>
+    <a class="btn" href="/Capital-AI-Trader-v0.1.0.apk">Download APK</a>
+    <p class="small">If Android warns about installing an unknown app, allow installation for your browser/file manager. This is a sideloaded personal build.</p>
+  </div>
+  <div class="card">
+    <h2>Security model</h2>
+    <p>No Capital.com password, Capital API key, OpenAI/Grok/DeepSeek key, or live unlock phrase is stored in this website, GitHub, Vercel, or Supabase.</p>
+  </div>
+  <div class="card">
+    <h2>Important</h2>
+    <p class="warn">The app defaults to SHADOW mode. Real-money mode requires LIVE environment + LIVE execution + the exact local unlock phrase.</p>
+  </div>
+</main>
+<script>
+if('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(()=>{});
+</script>
+</body>
+</html>
